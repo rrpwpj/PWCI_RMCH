@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil | Aprende Hoy</title>
+    <link rel="stylesheet" href="/css/perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="contenedor-pagina">
+    <nav class="menu">
+        <div class="menu-arriba">
+            <h1>Aprende Hoy</h1>
+            <a href="inicio.html">Inicio</a>
+            <a href="categorias.html">Categorías</a>
+        </div>
+        <div class="menu-abajo">
+            <a href="perfil.html" class="activo">Mi perfil</a>
+        </div>
+    </nav>
+
+    <main class="contenido">
+        <div class="selector-vista">
+            <button id="botonEstudiante" class="activo">Vista estudiante</button>
+            <button id="botonInstructor">Vista instructor</button>
+        </div>
+
+        <section id="perfilEstudiante" class="perfil">
+            <div class="perfil-encabezado">
+                <div class="perfil-portada"></div>
+
+                <div class="perfil-info">
+                    <div class="perfil-foto">
+                        <img src="/recursos/usuario.jpg" alt="Foto de perfil">
+                    </div>
+
+                    <div class="perfil-datos">
+                        <h2>Mariana López</h2>
+                        <p>@mariana.lopez</p>
+                        <span>Estudiante</span>
+                    </div>
+
+                    <button class="boton-editar">Editar perfil</button>
+                </div>
+            </div>
+
+            <div class="perfil-estadisticas">
+                <div>
+                    <strong>8</strong>
+                    <span>Cursos inscritos</span>
+                </div>
+                <div>
+                    <strong>4</strong>
+                    <span>Certificados</span>
+                </div>
+                <div>
+                    <strong>72%</strong>
+                    <span>Progreso general</span>
+                </div>
+            </div>
+
+            <section class="perfil-seccion">
+                <div class="perfil-titulo">
+                    <div>
+                        <h3>Mis cursos</h3>
+                        <p>Cursos que estás tomando actualmente</p>
+                    </div>
+                    <a href="#">Ver todos</a>
+                </div>
+
+                <div class="perfil-cursos">
+                    <div class="perfil-curso">
+                        <img src="/recursos/desarrolloweb.jpg" alt="">
+
+                        <div class="perfil-curso-info">
+                            <span>PROGRAMACIÓN</span>
+                            <h4>Desarrollo Web desde cero</h4>
+
+                            <div class="barra">
+                                <div style="width:72%"></div>
+                            </div>
+
+                            <div class="curso-footer">
+                                <span>72% completado</span>
+                                <button class="boton-continuar">Continuar curso</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perfil-curso">
+                        <img src="/recursos/diseñoux.jpg" alt="">
+
+                        <div class="perfil-curso-info">
+                            <span>DISEÑO</span>
+                            <h4>Diseño UX/UI</h4>
+
+                            <div class="barra">
+                                <div style="width:35%"></div>
+                            </div>
+
+                            <div class="curso-footer">
+                                <span>35% completado</span>
+                                <button class="boton-continuar">Continuar curso</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="perfil-seccion">
+                <div class="perfil-titulo">
+                    <div>
+                        <h3>Mis certificados</h3>
+                        <p>Certificados que has obtenido al completar tus cursos</p>
+                    </div>
+                    <a href="#">Ver todos</a>
+                </div>
+                <div class="certificados">
+                    <div class="certificado">
+                        <div class="certificado-icono">✓</div>
+                        <div class="certificado-info">
+                            <span>CURSO COMPLETADO</span>
+                            <h4>Desarrollo Web desde cero</h4>
+                            <p>HTML, CSS y JavaScript</p>
+                            <small>Completado el 12 de septiembre de 2026</small>
+                        </div>
+                        <button>Ver certificado</button>
+                    </div>
+                    <div class="certificado">
+                        <div class="certificado-icono">✓</div>
+                        <div class="certificado-info">
+                            <span>CURSO COMPLETADO</span>
+                            <h4>Introducción al Diseño UX/UI</h4>
+                            <p>Principios de diseño y experiencia de usuario</p>
+                            <small>Completado el 28 de agosto de 2026</small>
+                        </div>
+                        <button>Ver certificado</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="perfilInstructor" class="perfil oculto">
+            <div class="perfil-encabezado">
+                <div class="perfil-portada instructor"></div>
+
+                <div class="perfil-info">
+                    <div class="perfil-foto">
+                        <img src="/recursos/instructor.jpg" alt="Foto de perfil">
+                    </div>
+
+                    <div class="perfil-datos">
+                        <h2>Daniel Ramírez</h2>
+                        <p>@daniel.ramirez</p>
+                        <span>Instructor</span>
+                    </div>
+
+                    <button class="boton-editar">Editar perfil</button>
+                </div>
+            </div>
+
+            <div class="perfil-estadisticas">
+                <div>
+                    <strong>6</strong>
+                    <span>Cursos publicados</span>
+                </div>
+                <div>
+                    <strong>1,248</strong>
+                    <span>Alumnos</span>
+                </div>
+                <div>
+                    <strong>4.9</strong>
+                    <span>Calificación promedio</span>
+                </div>
+            </div>
+
+            <section class="perfil-seccion">
+                <div class="perfil-titulo">
+                    <div>
+                        <h3>Mis cursos</h3>
+                        <p>Cursos que has publicado</p>
+                    </div>
+                    <button class="boton-crear-curso">+ Crear curso</button>
+                </div>
+
+                <div class="perfil-cursos">
+                    <div class="perfil-curso">
+                        <img src="/recursos/desarrolloweb.jpg" alt="">
+
+                        <div class="perfil-curso-info">
+                            <span>PROGRAMACIÓN</span>
+                            <h4>Desarrollo Web desde cero</h4>
+                            <p class="curso-alumnos">428 alumnos</p>
+
+                            <div class="curso-footer">
+                                <strong>$299 MXN</strong>
+                                <button class="boton-administrar">Administrar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="perfil-curso">
+                        <img src="/recursos/diseñoux.jpg" alt="">
+
+                        <div class="perfil-curso-info">
+                            <span>DISEÑO</span>
+                            <h4>Diseño UX/UI</h4>
+                            <p class="curso-alumnos">316 alumnos</p>
+
+                            <div class="curso-footer">
+                                <strong>$349 MXN</strong>
+                                <button class="boton-administrar">Administrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</div>
+
+<div id="modalCertificado" class="modal">
+    <div class="modal-certificado">
+        <button class="cerrar-certificado" id="cerrarCertificado">&times;</button>
+        <div class="certificado-documento">
+            <div class="certificado-marco">
+                <div class="certificado-contenido">
+                    <div class="certificado-superior">
+                        <span>Aprende Hoy</span>
+                    </div>
+                    <p class="certificado-etiqueta">CERTIFICADO DE FINALIZACIÓN</p>
+                    <h1>Desarrollo Web<br>desde cero</h1>
+                    <p class="certificado-texto">Se otorga el presente certificado a</p>
+                    <h2>Mariana López</h2>
+                    <div class="certificado-linea"></div>
+                    <p class="certificado-descripcion">
+                        Por haber completado satisfactoriamente el curso de
+                        <strong>Desarrollo Web desde cero</strong>, adquiriendo conocimientos
+                        en HTML, CSS y JavaScript
+                    </p>
+                    <div class="certificado-datos">
+                        <div>
+                            <span>FECHA DE FINALIZACIÓN</span>
+                            <strong>12 de septiembre de 2026</strong>
+                        </div>
+                        <div>
+                            <span>DURACIÓN</span>
+                            <strong>8 horas · 24 clases</strong>
+                        </div>
+                        <div>
+                            <span>ID DEL CERTIFICADO</span>
+                            <strong>123456</strong>
+                        </div>
+                    </div>
+                    <div class="certificado-inferior">
+                        <div class="firma">
+                            <div class="firma-linea"></div>
+                            <strong>Daniel Ramírez</strong>
+                            <span>Instructor del curso</span>
+                        </div>
+                        <div class="sello">
+                            <span>APRENDE</span>
+                            <strong>HOY</strong>
+                            <small>CURSO<br>COMPLETADO</small>
+                        </div>
+                        <div class="firma">
+                            <div class="firma-linea"></div>
+                            <strong>Aprende Hoy</strong>
+                            <span>Plataforma educativa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acciones-certificado">
+            <button class="boton-cerrar-certificado" id="botonCerrarCertificado">Cerrar</button>
+            <button class="boton-descargar-certificado">Descargar certificado</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/perfil.js"></script>
+</body>
+</html>

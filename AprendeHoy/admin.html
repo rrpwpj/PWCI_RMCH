@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador | Aprende Hoy</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+<div class="contenedor-pagina">
+    <aside class="menu">
+        <div>
+            <div class="logo">
+                <h1>Aprende Hoy</h1>
+            </div>
+            <nav class="menu-opciones">
+                <a href="#" class="activo">Inicio</a>
+                <a href="#">Usuarios</a>
+                <a href="#">Instructores</a>
+                <a href="#">Cursos</a>
+                <a href="#">Certificados</a>
+                <a href="#">Reportes</a>
+            </nav>
+        </div>
+        <div class="menu-inferior">
+            <a href="#" class="salir">Salir</a>
+        </div>
+    </aside>
+
+    <main class="contenido">
+        <header class="encabezado">
+            <div>
+                <p class="encabezado-etiqueta">ADMINISTRACIÓN</p>
+                <h2>Panel de administración</h2>
+            </div>
+        </header>
+
+        <section class="seccion tabla-seccion">
+            <div class="titulo-seccion">
+                <div>
+                    <h3>Cursos recientes</h3>
+                    <p>Últimos cursos agregados a la plataforma</p>
+                </div>
+                <a href="#">Ver todos</a>
+            </div>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Curso</th>
+                            <th>Instructor</th>
+                            <th>Alumnos</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="curso-nombre">
+                                    <img src="/recursos/curso1.jpg" alt="">
+                                    <span>Desarrollo Web desde cero</span>
+                                </div>
+                            </td>
+                            <td>Daniel Ramírez</td>
+                            <td>428</td>
+                            <td>18/09/2026</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td><button class="boton-ver">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="curso-nombre">
+                                    <img src="/recursos/curso2.jpg" alt="">
+                                    <span>Diseño UX/UI</span>
+                                </div>
+                            </td>
+                            <td>Ana Torres</td>
+                            <td>316</td>
+                            <td>16/09/2026</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td><button class="boton-ver">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="curso-nombre">
+                                    <img src="/recursos/curso3.jpg" alt="">
+                                    <span>Marketing Digital</span>
+                                </div>
+                            </td>
+                            <td>Carlos Ruiz</td>
+                            <td>251</td>
+                            <td>15/09/2026</td>
+                            <td><span class="estado revision">Revisión</span></td>
+                            <td><button class="boton-ver">Ver</button></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="curso-nombre">
+                                    <img src="/recursos/curso4.jpg" alt="">
+                                    <span>Emprendimiento</span>
+                                </div>
+                            </td>
+                            <td>Laura Martínez</td>
+                            <td>184</td>
+                            <td>13/09/2026</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td><button class="boton-ver">Ver</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
